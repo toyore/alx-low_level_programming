@@ -1,17 +1,11 @@
-#!/bin/bash
 #include <stdio.h>
-
 /**
- * main - Entry point of the program
+ *main - main function
  *
- * Return: Always 0 (SUCCESS)
+ * Return: always 0 - success
  */
 int main(void)
 {
-    char *message = "Programming is like building a multilingual puzzle";
-
-    /* Use puts function to print the message followed by a new line */
-    puts(message);
-
-    return (0);
+	puts("/"The Programming is like building a multilingual puzzle");
+	return (0);
 }
