@@ -1,6 +1,5 @@
 #!/bin/bash
 #include <stdio.h>
-#include <unistd.h>
 
 /**
  * main - Entry point of the program
@@ -9,11 +8,10 @@
  */
 int main(void)
 {
-    char *message = "Programming is like building a multilingual puzzle\n";
-    ssize_t len = 47;  // Length of the message
+    char *message = "Programming is like building a multilingual puzzle";
 
-    /* Use write function to print the message to standard output (stdout) */
-    write(STDOUT_FILENO, message, len);
+    /* Use puts function to print the message followed by a new line */
+    puts(message);
 
     return (0);
 }
