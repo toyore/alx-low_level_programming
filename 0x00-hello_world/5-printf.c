@@ -1,4 +1,3 @@
-#!/bin/bash
 #include <stdio.h>
 
 /**
@@ -8,8 +7,7 @@
  */
 int main(void)
 {
-    /* Use printf to print the desired message with proper grammar */
     printf("with proper grammar, but the outcome is a piece of art,\n");
-
     return (0);
 }
+
