@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - Entry point of the program
  *
@@ -7,7 +6,6 @@
  */
 int main(void)
 {
-    /* Print the size of various types with proper grammar */
     printf("Size of a char: %lu byte(s)\n", sizeof(char));
     printf("Size of an int: %lu byte(s)\n", sizeof(int));
     printf("Size of a long int: %lu byte(s)\n", sizeof(long int));
