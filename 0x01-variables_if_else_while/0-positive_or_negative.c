@@ -4,7 +4,7 @@
 /**
  * main - main function
  *
- * Description: This program generates a random number and determine 
+ * Description: This program generates a random number and determine
  * if its positive or negative
  *
  * Return: always (0)
