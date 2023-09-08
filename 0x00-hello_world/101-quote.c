@@ -2,9 +2,10 @@
 #include <unistd.h>
 #include <string.h>
 /**
- *
  * main - main function
+ * 
  * Description: Prints a specified message to standard error
+ *
  * Return: always 1 (indicating an error)
  */
 int main(void)
