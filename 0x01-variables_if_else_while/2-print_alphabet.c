@@ -6,13 +6,13 @@
  */
 int main (void)
 {
-	char letter = 'a'; //start with 'a'
-	while (letter <= 'z') //iterate through 'a' to 'z'
+	char letter = 'a'; 
+	while (letter <= 'z') 
 	{
-		putchar(letter); //print the current character and move to the next line
-		letter++; //increment and move to the next character
+		putchar(letter);
+		letter++;
 	}
-	putchar ('\n'); //print a newline character
+	putchar ('\n');
 	return (0);
 }
 
