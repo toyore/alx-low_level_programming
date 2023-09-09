@@ -4,7 +4,7 @@
  * Description: This is a program that prints alphabeth in lower cases
  * Return: allows (0) success
  */
-int main (void) //The entry point of our program
+int main (void)
 {
 	char letter = 'a'; //start with 'a'
 	while (letter <= 'z') //iterate through 'a' to 'z'
