@@ -1,0 +1,24 @@
+n - main function
+  4  * Description: This is a program that prints alphabeth in lower cases
+  5  * Return: allows (0) success
+  6  */
+  7 int main(void)
+  8 {
+  9         char letter = 'a';
+ 10         char capLet = 'A';
+ 11 
+ 12         while (letter <= 'z')
+ 13         {
+ 14                 putchar(letter);
+ 15                 letter++;
+ 16         }
+ 17         while (capLet <= 'Z')
+ 18         {
+ 19                 putchar(capLet);
+ 20                 capLet++;
+ 21         }
+ 22         putchar ('\n');
+ 23 return (0);
+ 24 }
+~        
+
