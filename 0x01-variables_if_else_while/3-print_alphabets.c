@@ -8,6 +8,7 @@ int main(void)
 {
 	char letter = 'a';
 	char capLet = 'A';
+	
 	while (letter <= 'z')
 	{
 		putchar(letter);
