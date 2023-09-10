@@ -1,4 +1,4 @@
-#include <stdio.h>
+#includie <stdio.h>
 /**
  * main - main function
  * Description: This is a program that prints alphabeth in lower cases

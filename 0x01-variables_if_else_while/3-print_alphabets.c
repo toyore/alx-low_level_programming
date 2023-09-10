@@ -1,27 +1,25 @@
 #include <stdio.h>
 /**
  * main - main function
- * Description: This is a program that printsalphabeth in lower and upper case
+ * Description: This is a program that prints alphabeth in lower cases
  * Return: allows (0) success
  */
 int main(void)
 {
-	char smallLetter = 'a';
-	
-	while (smallLetter <= 'z')
+        char letter = 'a';
+
+        while (letter <= 'z')
+        {
+                putchar(letter);
+                letter++;
+        }
+	char smallLetter = 'A';
+
+	while (smallLetter <= 'Z')
 	{
 		putchar(smallLetter);
 		smallLetter++;
 	}
-
-	char capitalLetter = 'A';
-
-	while (capitalLetter <= 'Z')
-	{
-		putchar(capitalLetter);
-		capitalLetter++;
-	}
-		putchar('\n');
-
-	return (0);
+        putchar ('\n');
+        return (0);
 }
