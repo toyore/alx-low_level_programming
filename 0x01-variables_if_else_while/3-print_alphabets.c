@@ -8,11 +8,10 @@ int main(void)
 {
 	char letter = 'a';
 	char capLet = 'A';
-																
-   	while (letter <= 'z')
+	while (letter <= 'z')
 	{
-                putchar(letter);
-                letter++;
+		putchar(letter);
+		letter++;
 	}
 	while (capLet <= 'Z')
 	{
