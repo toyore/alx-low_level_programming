@@ -7,18 +7,18 @@
 int main(void)
 {
         char letter = 'a';
+	char capLet = 'A';
 
         while (letter <= 'z')
         {
                 putchar(letter);
                 letter++;
         }
-	char smallLetter = 'A';
 
-	while (smallLetter <= 'Z')
+	while (capLet <= 'Z')
 	{
-		putchar(smallLetter);
-		smallLetter++;
+		putchar(capLet);
+		capLet++;
 	}
         putchar ('\n');
         return (0);
