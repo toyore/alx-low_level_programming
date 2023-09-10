@@ -7,19 +7,20 @@
 int main(void)
 {
 	char smallLetter = 'a';
+	
+	while (smallLetter <= 'z')
+	{
+		putchar(smallLetter);
+		smallLetter++;
+	}
 
-		while (smallLetter <= 'z')
-		{
-			putchar(smallLetter);
-			smallLetter++;		}
+	char capitalLetter = 'A';
 
-		char capitalLetter = 'A';
-
-			while (capitalLetter <= 'Z')
-			{
-				putchar(capitalLetter);
-				capitalLetter++;
-			}
+	while (capitalLetter <= 'Z')
+	{
+		putchar(capitalLetter);
+		capitalLetter++;
+	}
 		putchar('\n');
 
 	return (0);
