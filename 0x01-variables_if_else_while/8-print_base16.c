@@ -5,18 +5,14 @@
  * Return: allows (0) success
  */
 int main(void)
-{       
-        int hexadec;
-        
-        for (hexadec = 0; hexadec <= 9; hexadec++)
-        {       
-                putchar(hexadec);
-        }       
-        
-        for (hexadec = 'a'; hexadec <= 'f'; hexadec++)
-        {       
-                putchar(hexadec);
+{
+	char hexdecimal[] = "0123456789abcdef\n";
+	int i = 0;
+
+	while (hexdecimal[i] != '\0')
+	{
+		putchar(hexdecimal[i]);
+		i++;
 	}
-        putchar('\n');
 return (0);
 }
