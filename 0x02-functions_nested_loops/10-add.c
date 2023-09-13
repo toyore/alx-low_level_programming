@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 /**
  * add -  This program add two integers
  * @i: The first integer
