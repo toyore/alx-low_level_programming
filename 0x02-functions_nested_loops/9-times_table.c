@@ -16,7 +16,7 @@ void times_table(void)
 
 			if (j != 0)
 			{
-				printf(", ");
+				printf(",");
 			}
 			if (result < 10)
 			{
