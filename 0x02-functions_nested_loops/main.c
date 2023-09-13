@@ -1,11 +1,12 @@
 #include "main.h"
+
 /**
- * main - _putchar function
- * Declaration: This is a program that print _putchar
- * Return: allows ()) success
+ * main - check the code for Holberton School students.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-       int _putchar(char c);
-        return (0);
+	print_alphabet();
+	return (0);
 }
