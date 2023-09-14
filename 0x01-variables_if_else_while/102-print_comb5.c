@@ -4,36 +4,26 @@
  * Description: This is a program that prints two digits
  * Return: allows (0) success
  */
+
 int main(void)
 {
-	int num1 = 0, num2 = 1;
+	int i, j;
 
-	while (num1 <= 99)
+	for (i = 0; i <= 99; i++)
 	{
-		while (num2 <= 99)
+		for (j = i; j <= 99; j++)
 		{
-			if (num1 != num2)
+			putchar('0' + i / 10);
+			putchar('0' + i % 10);
+			putchar(' ');
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+			if (i != 99 || j != 99)
 			{
-				if (num1 < num2)
-				{
-					putchar((num1 / 10) + '0');
-					putchar((num1 % 10) + '0');
-					putchar(',');
-					putchar((num2 / 10) + '0');
-					putchar((num2 % 10) + '0');
-
-					if (num1 != 98 || num2 != 99)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
-			num2++;
 		}
-		num1++;
-		num2 = (num1 / 10) * 10 + (num1 % 10) + 1;
 	}
-	putchar('\n');
 return (0);
 }
