@@ -11,7 +11,7 @@ void print_line(int n)
 	}
 	else
 	{
-		int i = 0;
+		int i = 1;
 
 		while (i <= n)
 		{
