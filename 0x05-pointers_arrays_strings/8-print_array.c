@@ -17,8 +17,7 @@ void print_array(int *a, int n)
 
 	if (a == NULL || n <= 0)
 	{
-		printf("g\n");
-		printf("e\n");
+		printf("\n");
 		return;
 	}
 
