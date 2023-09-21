@@ -4,40 +4,26 @@
  * @dest: Destination string.
  * @src: Source string.
  * @n: The maximum number of characters to copy.
- * Return: A pointer to the destination string (dest).
+ * Return: A pointer to the destination string (dest)
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	/* Store the original destination pointer*/
 	char *original_dest = dest;
-	char dest_length = 0;
-	char src_length = 0;
-	char count_bytes = 0;
+	int i;
 
-	while (*dest != '\0')
+	/* Copy at most 'n' characters from 'src' to 'dest'*/
+	for (i = 0; i < n && src[i] != '\0'; i++)
 	{
-		dest++;
-		dest_length++;
+		dest[i] = src[i];
 	}
 
-	/* Calculate the length of the source string, up to a maximum of n bytes*/
-	while (src_length < n && *src != '\0')
+	/* Null-terminate the destination string*/
+	for (; i < n; i++)
 	{
-		src++;
-		src_length++;
+		dest[i] = '\0';
 	}
-	/*reset back pointers to their original position*/
-	dest = original_dest;
-	src -= src_length;
 
-	/*Copy characters from src to dest, up to a maximum of n bytes*/
-	while (*src != '\0' && count_bytes < n)
-	{
-		*dest = *src;
-		dest++;
-		src++;
-		count_bytes++;
-	}
-	*dest = '\0';
-	/*Return a pointer to the concatenated string*/
+	/* Return a pointer to the beginning of 'dest'*/
 	return (original_dest);
 }
