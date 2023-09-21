@@ -8,6 +8,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
+	char *original_dest = dest;
 	char dest_length = 0;
 	char src_length = 0;
 	char count_bytes = 0;
@@ -25,7 +26,7 @@ char *_strncpy(char *dest, char *src, int n)
 		src_length++;
 	}
 	/*reset back pointers to their original position*/
-	dest -= dest_length;
+	dest = original_dest;
 	src -= src_length;
 
 	/*Copy characters from src to dest, up to a maximum of n bytes*/
@@ -38,5 +39,5 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 	*dest = '\0';
 	/*Return a pointer to the concatenated string*/
-	return (dest);
+	return (original_dest);
 }
