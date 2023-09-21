@@ -8,6 +8,7 @@
  *
  * Return: True if @c is a separator, false otherwise.
  */
+
 bool is_separator(char c)
 {
 	int i;
@@ -23,15 +24,10 @@ bool is_separator(char c)
 	return (false);
 }
 
-/**
- * cap_string - Capitalize all words in a string.
- * @str: The string to capitalize.
- *
- * Return: A pointer to the modified string.
- */
 char *cap_string(char *str)
 {
 	bool new_word = true;
+	char *original_str = str; /* Store the original pointer */
 
 	while (*str != '\0')
 	{
@@ -41,7 +37,10 @@ char *cap_string(char *str)
 		}
 		else if (new_word && isalpha(*str))
 		{
-			*str = toupper(*str);
+			if (!isdigit(*(str - 1))) /* Check if not following a digit */
+			{
+				*str = toupper(*str);
+			}
 			new_word = false;
 		}
 		else
@@ -50,6 +49,6 @@ char *cap_string(char *str)
 		}
 		str++;
 	}
-	return (str);
-}
 
+	return (original_str); /* Return the original pointer */
+}
