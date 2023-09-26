@@ -4,6 +4,8 @@
  * @a: A pointer to an 8x8 character array representing the chessboard.
  */
 
+#include <stdio.h>
+
 void print_chessboard(char (*a)[8])
 {
 	int i;
@@ -13,16 +15,8 @@ void print_chessboard(char (*a)[8])
 	{
 		for (j = 0; j < 8; j++)
 		{
-			if ((i + j) % 2 == 0)
-			{
-				/* Black square*/
-				printf("\033[30;47m%c\033[0m", a[i][j]);
-			} else
-			{
-				/* White square*/
-				printf("\033[97;40m%c\033[0m", a[i][j]);
-			}
+			printf("%c ", a[i][j]); /*Print the character at position (i, j)*/
 		}
-		printf("\n");
+		printf("\n"); /* Move to the next row*/
 	}
 }
