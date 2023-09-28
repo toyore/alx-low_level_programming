@@ -1,5 +1,7 @@
+
 #include <stdio.h>
 #include <string.h>
+
 /**
  * is_palindrome - Check if a string is a palindrome.
  * @s: The string to be checked for palindromicity.
@@ -14,21 +16,27 @@
  * 0 if 's' is not a palindrome.
  */
 
+
 int is_palindrome(char *s);
+
+
 
 int is_palindrome(char *s)
 {
-	int len = strlen(s);
-	int i, j;
+	int length = strlen(s);
 
-	for (i = 0, j = len - 1; i < j; i++, j--)
+	/* Base case: an empty string or a single character is a palindrome */
+	if (length <= 1)
 	{
-		if (s[i] != s[j])
-		{
-			return (0); /* Not a palindrome */
-		}
+		return (1);
 	}
 
-	return (1); /* It's a palindrome */
-}
+	/* Compare the first and last characters */
+	if (s[0] != s[length - 1])
+	{
+		return (0);
+	}
 
+	/* Recursively check the substring excluding the first and last characters */
+	return is_palindrome(s + 1);
+}
