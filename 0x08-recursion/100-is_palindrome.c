@@ -17,26 +17,23 @@
  */
 
 
-int is_palindrome(char *s);
-
-
 
 int is_palindrome(char *s)
 {
 	int length = strlen(s);
+	int start = 0;
+	int end = length - 1;
 
-	/* Base case: an empty string or a single character is a palindrome */
-	if (length <= 1)
+	while (start < end)
 	{
-		return (1);
+		if (s[start] != s[end])
+		{
+			return (0);
+			/* Characters at the start and end don't match */
+		}
+		start++;
+		end--;
 	}
 
-	/* Compare the first and last characters */
-	if (s[0] != s[length - 1])
-	{
-		return (0);
-	}
-
-	/* Recursively check the substring excluding the first and last characters */
-	return is_palindrome(s + 1);
+	return (1);  /* It's a palindrome*/
 }
