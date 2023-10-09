@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	if (result == NULL)
 	{
-		return (NULL);  
+		return (NULL);
 	}
 
 	if (s1 != NULL)
@@ -33,7 +33,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	else
 	{
-		result[0] = '\0';  
+		result[0] = '\0';
 	}
 
 	strncat(result, s2, concat_len);
