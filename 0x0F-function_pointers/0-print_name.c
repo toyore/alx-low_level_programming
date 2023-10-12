@@ -1,7 +1,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-
 /**
  * _strlen - Calculate the length of a string.
  * @s: The string.
@@ -32,10 +31,8 @@ void print_name(char *name, void (*f)(char *))
 	if (output == NULL)
 	{
 		write(2, "Memory allocation failed\n", 24);
-		/* 2 is the file descriptor for stderr */
 		exit(1);
 	}
-
 
 	for (i = 0; name[i]; i++)
 	{
