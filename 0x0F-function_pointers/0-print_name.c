@@ -1,6 +1,6 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include "function_pointers.h"
 
 /**
  * _strlen - Calculate the length of a string.
@@ -25,7 +25,6 @@ size_t _strlen(const char *s)
  */
 void print_name(char *name, void (*f)(char *))
 {
-	size_t i;
 	size_t len = _strlen(name);
 	char *output = (char *)malloc(len + 1);
 
@@ -35,7 +34,7 @@ void print_name(char *name, void (*f)(char *))
 		exit(1);
 	}
 
-	for (i = 0; name[i]; i++)
+	for (size_t i = 0; name[i]; i++)
 	{
 		output[i] = name[i];
 	}
@@ -46,4 +45,3 @@ void print_name(char *name, void (*f)(char *))
 
 	free(output);
 }
-
