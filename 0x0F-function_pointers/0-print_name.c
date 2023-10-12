@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <unistd.h>
+#include "function_pointers.h"
 
 /**
  * _strlen - Calculate the length of a string.
