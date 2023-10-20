@@ -1,4 +1,5 @@
 #include <stdio.h>
+void print_before_main(void);
 
 /**
  * main - check the code
@@ -7,6 +8,7 @@
  */
 int main(void)
 {
-    printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
-    return (0);
+	print_before_main();
+	printf("(A tortoise, having pretty good sense of a hare's nature, challenges one to a race.)\n");
+	return (0);
 }
