@@ -18,22 +18,17 @@
 
 
 
-int is_palindrome(char *s)
+int is_palindrome(char *s, int start, int end)
 {
-	int length = strlen(s);
-	int start = 0;
-	int end = length - 1;
-
-	while (start < end)
+	if (start >= end)
 	{
-		if (s[start] != s[end])
-		{
-			return (0);
-			/* Characters at the start and end don't match */
-		}
-		start++;
-		end--;
+		return (1);
 	}
 
-	return (1);  /* It's a palindrome*/
+	if (s[start] != s[end])
+	{
+		return (0);
+	}
+
+	return (is_palindrome(s, start + 1, end - 1));
 }
