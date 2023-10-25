@@ -8,8 +8,6 @@
  *
  * Return: Always 0.
  */
-size_t print_listint(const listint_t *h);
-listint_t *add_nodeint_end(listint_t **head, const int n);
 int main(void)
 {
     listint_t *head;
@@ -24,7 +22,8 @@ int main(void)
     add_nodeint_end(&head, 402);
     add_nodeint_end(&head, 1024);
     print_listint(head);
+    reverse_listint(&head);
+    print_listint(head);    
     free_listint2(&head);
-    printf("%p\n", (void *)head);
     return (0);
 }
