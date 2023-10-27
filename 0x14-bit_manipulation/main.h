@@ -7,6 +7,7 @@
 
 
 unsigned int binary_to_uint(const char *b);
+void print_binary(unsigned long int n);
 
 #define MAX_BUFFER_SIZE 256
 
